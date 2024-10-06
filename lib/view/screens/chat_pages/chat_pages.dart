@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp/view/widget/chat_item_listtile.dart';
 
 class ChatPages extends StatefulWidget {
   const ChatPages({super.key});
@@ -10,6 +11,14 @@ class ChatPages extends StatefulWidget {
 class _ChatPagesState extends State<ChatPages> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: ListView(
+        children: [
+          chatItemListTile(),
+          chatItemListTile(),
+          chatItemListTile(),
+        ],
+      ),
+    );
   }
 }
